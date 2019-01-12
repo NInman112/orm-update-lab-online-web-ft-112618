@@ -48,7 +48,7 @@ class Student
     student
   end
 
-  def self.new_from_db(row, x)
+  def self.new_from_db(row)
     binding.pry
     new_student = Student.new
     new_student.id = row[0]
