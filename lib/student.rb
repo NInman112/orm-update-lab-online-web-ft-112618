@@ -1,5 +1,6 @@
 require_relative "../config/environment.rb"
 require'pry'
+
 class Student
   attr_accessor :name, :grade
   attr_reader :id
@@ -49,7 +50,6 @@ class Student
   end
 
   def self.new_from_db(row)
-
     self.new(row[0], row[1], row[2])
   end
 
